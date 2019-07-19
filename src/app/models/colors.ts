@@ -1,0 +1,1 @@
+export type Role = 'red' | 'blue' | 'green';

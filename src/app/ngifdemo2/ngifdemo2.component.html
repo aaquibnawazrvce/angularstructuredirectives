@@ -1,0 +1,15 @@
+<p>
+  ngifdemo2 works!
+</p>
+
+<div *ngIf="showDataDetails; else showWarning">
+
+    Employee Id : 03284 
+    Employee Name : "Aaquib"
+
+</div>
+
+<ng-template #showWarning>
+    This is  Just a Warning as i am not able to show employee Data
+
+</ng-template>

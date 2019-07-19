@@ -1,0 +1,26 @@
+<p>ngfordemo4 works!</p>
+
+<div *ngFor="let tempEmp of emp;last as l">
+
+        {{l}} {{tempEmp.firstName}} 
+
+</div>
+
+<h2> Way 5 of For Loop - Odd  Rows </h2>
+
+<div *ngFor = "let temp1 of emp;odd as o">
+
+    <div *ngIf="o" class="redMe"> 
+
+        {{temp1.firstName}}
+
+    </div>
+
+    <div *ngIf="!o" class="greenMe"> 
+
+            {{temp1.firstName}}
+    
+   </div>
+    
+
+</div>

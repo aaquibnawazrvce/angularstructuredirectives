@@ -1,0 +1,24 @@
+<p>
+  ngifdemo3 works!
+</p>
+
+
+<div *ngIf="showBusinessData;then block1; else block2;">
+
+  Business Development Values
+  1. Focus
+  2. Hard Work
+
+
+</div>
+
+<ng-template #block1>
+
+  Business Development Values
+  1. Focus
+  2. Hard Work
+</ng-template>
+
+<ng-template #block2>
+    This is the Else Demo Block
+</ng-template>
